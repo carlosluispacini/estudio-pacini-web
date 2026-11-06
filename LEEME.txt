@@ -1,0 +1,26 @@
+ESTUDIO PACINI — Sitio institucional + OAuth
+Dominio previsto: estudio-pacini.com.ar
+
+Archivos para subir a la RAÍZ del repositorio público estudio-pacini-web:
+  index.html
+  styles.css
+  privacidad.html
+  automatizacion/index.html (mantener la subcarpeta)
+
+IMPORTANTE ANTES DE PUBLICAR:
+- Revisar y aprobar el contenido institucional y la política de privacidad.
+- Incorporar una dirección pública real de contacto en privacidad.html, sección 8.
+- Verificar que el contenido de la política coincide con las prácticas reales.
+- No subir ningún token OAuth, contraseña, PDF de clientes ni código interno del estudio.
+
+Pasos siguientes:
+1. GitHub repositorio > Add file > Upload files y subir estos archivos conservando la estructura.
+2. Settings > Pages > Deploy from a branch > main / (root) > Save.
+3. Settings > Pages > Custom domain: estudio-pacini.com.ar.
+4. Configurar DNS del dominio en NIC Argentina usando los servidores y registros correspondientes al proveedor DNS escogido. Los registros A de GitHub Pages y el TXT de verificación deben obtenerse de la documentación oficial vigente antes de aplicarlos.
+5. Verificar dominio en Google Search Console y configurarlo en Google Auth Platform.
+6. URL inicio de OAuth: https://estudio-pacini.com.ar/automatizacion/
+   URL privacidad de OAuth: https://estudio-pacini.com.ar/privacidad.html
+7. Cuando Google permita Producción, cambiar el estado y solo entonces renovar autorización de Gmail.
+
+Atención: El paso a producción evita la caducidad de refresh tokens impuesta por el modo Prueba (7 días), pero no garantiza que el token nunca pueda ser revocado o que Google no exija verificación por scopes restringidos.
